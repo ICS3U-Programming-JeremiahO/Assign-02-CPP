@@ -1,9 +1,9 @@
 // Copyright (c) 2021 Jeremiah omoike All rights reserved.
 //
 // Created by: Jeremiah omoike
-// Date: September, 25 2022
-// This program asks the user for the radius and then
-// displays the circumference using tau.
+// Date: October , 4 2022
+// This program asks the user for the length,width and height  and then
+// displays the Surface area and volume.
 #include <cmath>
 #include <iostream>
 
@@ -17,7 +17,7 @@ int main() {
     float volume;
     
 
-    // get the radius from the user
+    // get the length,width and height from the user
     std::cout << "Enter the length (cm): ";
     std::cin >> length;
 
@@ -31,11 +31,11 @@ int main() {
 
     float beta = width * sqrt((length / 2) * (length / 2) + height * height);
 
-    // calculate the surface area and volume using tau
+    // calculate the surface area and volume 
     surfaceArea = alpha + beta;
     volume = length * width * height / 3;
 
-    // display the circumference to the user
+    // display the surface area to the user
     std::cout << "\n";
     std::cout << "surfaceArea = " << surfaceArea << " cm^2" << std::endl;
 
